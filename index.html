@@ -19,7 +19,7 @@
       body {
         font-family: "Dosis", sans-serif;
         margin: 2em;
-        background-color: #000;
+        background-color: #120;
         color: #fff;
         font-size: 1.2em;
       }
@@ -35,13 +35,13 @@
     </style>
   </head>
   <body>
-    <h1>We walk to you</h1>
+    <h1>Further Maths</h1>
     <div id="poem"></div>
     <script>
       // set up the lists of words
       const subjects = "James,Alice,Bob,Casey,Nina,Lucas,Frank,Aidan,Madi".split(","),
-        verbs = "has,eats,buys,sells,steals".split(","),
-        objects = "two apples,six oranges,eight chocolates,two umbrellas,five rings, six pineapples".split(",");
+        verbs = "buys,sells,finds,eats,gives".split(","),
+        objects = "apples,oranges,chocolates,umbrellas,rings,pineapples".split(",")
       // set up the counter
       let counter = 0;
 
@@ -61,7 +61,7 @@
           getRandomFromList(subjects) +
           " " +
           getRandomFromList(verbs) +
-          " to " +
+          " one,two,three,four,five,six,seven,eight" +
           getRandomFromList(objects);
         const lineText = document.createTextNode(text);
         line.appendChild(lineText);
